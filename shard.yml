@@ -1,0 +1,29 @@
+name: calendar
+version: 0.1.0
+
+authors:
+  - Daniel Worrall <Daniel.Worrall@hotmail.co.uk>
+
+targets:
+  calendar:
+    main: src/app.cr
+  dotenv:
+    main: src/dotenv.cr
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+  geoip2:
+    github: delef/geoip2.cr
+
+development_dependencies:
+  ameba:
+    github: crystal-ameba/ameba
+    version: ~> 0.10.1
+  dotenv:
+    github: gdotdesign/cr-dotenv
+    version: ~> 0.3.1
+
+crystal: 0.32.1
+
+license: MIT
